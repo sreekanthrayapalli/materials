@@ -9,13 +9,13 @@ public class StringReader implements ItemReader<String>{
 	
 	String []arr = {"abc","xyz","pqr"};
 
-	int a = -1;
+	int a = 0;
+	//2  
 	@Override
 	public String read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
 		// TODO Auto-generated method stub
-		if(arr.length < a) {
-			a++;
-			return arr[a];
+		if(arr.length > a) {
+			return arr[a++];
 		}
 		else {
 			a= -1;

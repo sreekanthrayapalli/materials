@@ -1,0 +1,8 @@
+1. Write a program to calculate sum of numbers in array
+
+2. Write a program to find max number and min number from an array
+
+3. w.a.p to sort of an array
+4. w.a.p to remove duplicates from an array
+input -->[]  10,4,10,5,4,2,36
+output-->  10,4,5,2,36

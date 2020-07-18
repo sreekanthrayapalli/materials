@@ -1,0 +1,26 @@
+1. Given a List of words from a book.
+Determine the Cost of printing that book depending on following conditions
+if any word occurs only once then that word costs $1
+if any word occurs >= 2 times and <=5 times then that word costs $2
+if any word occurs >= 6 times and <=10 times then that word costs $3
+if any word occurs >10 times then the algorithm to calculate is
+  Ex: 22 times => 10 times + 10 times + 2 times = $3 + $3 + $2 = $8
+hello-->2
+ok -->5
+java--->10
+good-->1
+
+4+10+30+1==>45
+
+
+2. assume that hr is having 100 resumes, some resumes contains java word,some other resume contains hadoop , some both , you have to pick the resumes which contains hadoop and java
+
+3. compare excel values and jdbc values
+
+4. write a program to implement copy functinality (i.e read data from file and write same data into other file in different location)
+
+5. create employee class by implementing Serializable interface with getters and setters methods
+     create List object and save 10 employee objects
+     create a file and store list(10 employees)  hint: use Serializable concept
+
+     read all employee data from file and display data in sorted order of employee name

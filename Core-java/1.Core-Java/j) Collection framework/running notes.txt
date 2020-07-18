@@ -1,0 +1,240 @@
+Collection Framework(java.util.*)
+---------------------------------
+
+collection of different types of elements(objects) we can store into a single variable with dynamic memory 
+
+lot of pre-defined classes and methods
+
+
+1d collection framework: it contains only values[abc,xyz,1000,100.56f]
+we have pre-defined interfaces and classes
+
+                  Collection
+                       |
+             List------------Set
+                              |
+                            SortedSet
+
+List is implemented in java.util.ArrayList(class), java.util.LinkedList(class)
+
+
+Set is implemented in java.util.HashSet(class),java.util.LinkedHashSet(c)
+
+SortedSet is implemented in java.util.TreeSet
+
+
+Behaviour of List
+-----------------
+a)allow duplicates values
+b)we can get any element based on index
+c)we can display the values in forward and backward direction
+d)we can store elements at any position(default is end)
+
+List is implemented in java.util.ArrayList(class), java.util.LinkedList(class)
+
+
+Behaviour of Set
+----------------
+
+a)No duplicates
+b)we can not store any elements in a particular position
+c)we can display values in forward direction only
+Set is implemented in java.util.HashSet(class),java.util.LinkedHashSet(c)
+
+HashSet display the data in random order
+
+LinkedHashSet displays the data in inserted order
+
+
+SortedSet
+---------
+a)same as Set but it displays the data in a sorted order
+
+b)TreeSet is implemented in SortedSet
+
+Methods in java.util.Collection
+-------------------------------
+a)public boolean add(Object)
+
+b)public int size()
+
+c)public boolean addAll(Collection)
+l1 =10,20,30;
+l2 = 20,50,100;
+
+l1.addAll(l2);
+l1=
+
+
+d)public void clear():delete all objects from Collection
+
+e)public Iterator iterator()
+Iterator ite = l1.iterator();
+
+In Iterator interface we have two methods
+         i)public boolean hasNext(): if it points some element then it returns true else returns false
+         ii)public Object next():it returns correct element
+
+while(ite.hasNext()){
+Object obj =ite.next();
+System.out.println(obj);
+}
+
+
+f)public Object[] toArray();
+
+Object obj[] = l1.toArray();
+for(int i=0;i<obj.length; i++){
+System.out.println(obj[i]);
+}
+
+
+g)public boolean contains(Object obj)
+
+
+Methods in List
+---------------
+public void add(int i,Object)
+
+public Object get(int i)
+
+public ListIterator listIterator():
+ListIterator is sub interface of iterator interface
+  i)public boolean hasNext()
+  ii)public Object next()
+  iii)public boolean hasPrevious()
+  iv)public Object previous()
+
+
+
+2d collection framework
+-----------------------
+java.util.Map(I)-->HashMap,LinkedHashMap
+       |
+java.util.SortedMap(I) -->TreeMap
+
+where key should be unique
+
+methods in java.util.Map
+------------------------
+a)public Object put(Object key,Object value)
+
+{1:"abc5",2:"xyz",3:"pqr",4:"abc2",5:"xyz"}
+
+put(4,"abc2"); null
+put(1,"abc5");//abc
+
+
+b)public int size()
+
+c)public Object get(Object key)
+
+d)public boolean containsKey(Object key)
+
+boolean result = map.containsKey(4);//true
+
+boolean result = map.containsKey(40);//false
+
+
+e)public boolean containsValue(Object val)
+
+f)public Object remove(Object key)
+
+g)public void clear():
+
+h)public Set keySet()
+
+i)public Collection values()
+
+
+
+HashMap,TreeMap displays the data in sorted order of keys
+LinkedHashMap displays the data in inserted order
+
+TreeMap we can change the order according descending or ascending
+
+Example program
+public class Example2 {
+
+	public static void main(String[] args) {
+
+		Map map = new LinkedHashMap<>();
+		map.put(1, "ABC");
+		map.put(2, "xyz");
+		map.put(-1, "pqr");
+		map.put(0, "abc2");
+		map.put(100, "lakj");
+		map.put(98, "abdd");
+		System.out.println(map);
+		System.out.println("size is "+map.size());
+		
+		Set keys = map.keySet();//put all keys in set
+		
+		Iterator ite = keys.iterator();
+		while(ite.hasNext()){
+			Object key = ite.next();//get one-one key from set by using iterator
+			Object value = map.get(key);//pass key to map and get value
+			System.out.println(key+"   --->"+value);
+		}
+	}
+
+}
+
+
+Comparator
+----------
+
+public int compare(Object obj1,Object obj2)
+
+
+
+java.util.Date: it prints current date and time with
+default format
+
+SimpleDateFormat : it prints Date object into specific(required) format
+dd ->date
+MM->month
+yy->will display year in two digits
+yyyy->will display year in four digits
+w->weekday
+ddd->prints date for year 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

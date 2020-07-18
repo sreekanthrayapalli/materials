@@ -1,0 +1,25 @@
+1.map1=> 12:"sunday" 13:"monday" 14:"tuesday" 15:"wednesday"....18:"saturday" find this matching day in the calendar year 2013. and retrieve the month.
+
+
+2. HashMap with regnum as key and mark as value. find the avg of marks whose key is odd.
+input:{12:90,35:90,33:90,56:88}
+output:avg of(90+90) =90
+
+3)in a map, find the value corresponding to the largest key
+	input{12:"hari",13:"krish",18:"mani"}
+	output:,mani
+
+4)Given two hashmap h1 with employee id and designation and hashmap h2 with id and salary, in a new Haspmap the manager id and salary with the increment of 5000 has to added and printed.
+Input: {1="analyst",2="manager"}
+Input2:{1=2000,2=5000}
+output:{2=10000}
+
+
+5)avg of odd key values in hash map.
+	input1-> {1:4,2:7,3:8,4:6}
+	output-> (4+8)/2 = 6
+
+
+6)create employee class(empno,ename,sal) and dept class(deptno,dname) create TreeMap object and employee object as key, and dept object as value to TreeMap object and display key,value based on employee num(use Comparable and Comparator internally)
+
+

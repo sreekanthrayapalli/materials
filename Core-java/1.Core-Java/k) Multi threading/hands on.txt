@@ -1,0 +1,36 @@
+1)
+
+create ArrayList and store values 1-100000
+create  thread class(thread1) and create two objects for that, one thread object has to display 
+even numbers, other thread has to display odd numbers. 
+
+find time difference in this program with threads and without threads
+
+
+
+
+
+
+2)producer-consumer problem
+------------------------------------
+steps
+-----
+a)Generator class is having two methods(normal class)
+    int a;
+   boolean flag=true/false
+   i)put method
+   ii)get method
+
+b)Produrcer is accessing put method(thread class)
+
+c)Consumer is accessing get method(thread class)
+
+d)Execution logic create one Generator object, two threads call start methods
+
+
+3)Chating application
+----------------------------
+String []ram ={"hi","how are you","i m fine"};
+String []raj = {"hi","i am fine what about you"};
+
+display these message properly implement by using producer-consumer problem

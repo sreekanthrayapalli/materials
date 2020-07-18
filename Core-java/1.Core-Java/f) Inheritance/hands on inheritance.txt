@@ -1,0 +1,16 @@
+1. create class of Person with two variables i.e fname,lname (String data type) and initialize these two values through parameter constructor
+
+2. create class of Student which extends Person 
+   a) with variables
+      stdno,stdadd
+      Initialize these values through parameter constructor
+
+3. create clasims of Trainer which extends Person
+   a) with variables
+      suject,salary,type
+      Initialize these values through parameter constructor
+
+4. create main class and create student object,trainer object by using parameter constructor 
+
+
+----------------------------------------------------------------

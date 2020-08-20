@@ -1,0 +1,51 @@
+
+1. create abstract class Employee with two variable like empno,ename
+   methods(two abstract method and one implemented method)
+   abstract methods
+   a)abstract void jobs();
+   b)abstract void timings();
+   implemented methods
+   c)create method name is noticePeriod, return type is void, which is used to diplay the message is "Notice Period is 2 Months"
+
+2. create class Programmer which extends Employee class
+   a) implement method jobs() which is used to display "Apply Logic by using sequence diagram"
+   b) implement method timings() which is used to display "ur timings are 1:00 pm to 10:00pm
+  
+3. create class  Analyst which implements Employee class
+   a) implement method jobs() which is used to display "Analyse The requirement"
+   b) implement timings method which is used to display "ur timings are 08:00am to 05:00pm
+
+4. create class Manager which implements Employee class
+   a) implement method jobs() which is used to display "Observe EveryOne"
+   b) implement timings method which is used to display "ur timings are 24 hours, be in online everytime"
+
+5)Execution class
+----------------------
+Employee obj;
+
+obj=new Programmer();
+obj.job();
+obj=new Analyst();
+obj.job();
+
+obj=new Manager();
+obj.job();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

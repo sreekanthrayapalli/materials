@@ -1,0 +1,18 @@
+a)create a package named "com.myc.wrapper"
+b)create a class named "Converter"
+c.1)create a overloading method named convertWrapper which takes all parameter 
+
+   Integer convertWrapper(int a)
+   Float convertWrapper(float a)
+write methods like above for all parameter types
+
+
+c.2)create a overloading method named convertPrimitive which takes all wraperObjects convert 
+into primitive
+      int convertPrimitive(Integer io)
+      float convertPrimitive(Float a)
+d)in side all the methods you need take primitive data type convert into object and return it
+
+e)Now create execution logic class in same package named "ConverterEx"
+
+f)Inside main method create object for Converter and call all the methods

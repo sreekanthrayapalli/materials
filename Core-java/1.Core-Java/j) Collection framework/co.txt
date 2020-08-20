@@ -1,0 +1,283 @@
+       Collection
+              |
+List--------- Set
+                       |
+                  SortedSet
+
+method in Collection
+--------------------------
+a)public boolean add(Object )
+b)public int size()
+c)public void clear();
+d)public boolean addAll(Collection)
+e)public Iterator iterator(): which all elements one by one
+   Iterator is an iinterface which is having two methods
+   1)public boolean hasNext()
+   2)public Object next()
+
+f)public Object[] toArray()
+
+
+List l = new ArrayList();
+l.add(10);
+l.add(2);
+l.add(5);
+l.add(10);
+
+System.out.println(l);//10,2,5,10
+
+
+
+Set l = new HashSet();
+l.add(10);
+l.add(2);
+l.add(5);
+l.add(10);
+
+System.out.println(l);//2,5,10(order will be changed)
+
+
+Set l = new LinkedHashSet();
+l.add(10);
+l.add(2);
+l.add(5);
+l.add(10);
+
+System.out.println(l);//10,2,5(order will be changed)
+
+
+SortedSet l = new TreeSet();
+l.add(10);
+l.add(2);
+l.add(5);
+l.add(10);
+
+System.out.println(l);//2,5,10(order will be changed)
+
+Methods in java.util.List
+-------------------------------
+a)public void add(int postion,Object)
+b)public Object get(int)
+c)public ListIterator listIterator()
+    i)public boolean hasNext()
+    ii)public Object next()
+    iii)public boolean hasPrevious();
+    iv)public OBject previous()
+
+
+2d collection framework
+------------------------------
+student details
+employee details
+product details
+
+{"employee":{"abc","xyz","pqr"},"student":{1:{"raju","hyd"},2:{"ravi","sec"}}
+
+
+Map--->HashMap,LinkedHashMap
+  |
+SortedMap--->TreeMap
+
+methods in java.util.Map
+--------------------------------
+a)public void put(Object key,Object value)
+b)public int size()
+c)public Object get(object key)
+d)public boolean remove(Object key)
+e)public void clear()
+f)public boolean containsKey(Object key)
+g)public boolean containsValue(Object value)
+h)public Set keySet()
+Map map = new HashMap();
+map.put(1,"abc");
+map.put(2,"xyz");
+map.put(3,"pqr");
+
+Set keys = map.keySet();
+S.o.p(keys);//1,2,3
+
+i)public Set entrySet()
+
+j)public Collection values()
+
+
+interface i1{
+class C1{
+void m1(){
+}
+
+}
+
+void m2();
+
+}
+
+i1.c1 obj = new i1.c1();
+Map map = new HashMap();
+map.put(1,"abc");
+map.put(2,"xyz");
+map.put(3,"pqr");
+
+Map.Entry--->(key,value)
+
+
+Set set = map.entrySet();
+S.o.p(set);[(1,abc),(2,xyz),(3,pqr)]
+
+Iterator ite = set.iterator();
+while(ite.hasNext()){
+Object obj = ite.next();
+Map.Entry me = (Map.Entry)obj;
+Object key = me.getKey();
+Object value = me.getValue();
+
+
+}
+
+interface Map{
+
+class Entry {
+Object key;
+Object value;
+
+Object getKey(){
+return key;
+}
+Object getValue(){
+return value;
+}
+
+}
+Map map = new LinkedHashMap();   
+String []words = word.split(" ");
+for(int i=0;i<words.length;i++){
+   int count=1;
+    if(map.containsKey(words[i]))
+        {
+                  Object value = map.get(words[i]);
+                  Integer io = (Integer)value;
+                  io++;
+                  map.put(words[i],io);
+         }else{
+                map.put(words[i],count);
+            }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+word="hi how are you how about you";
+words[]=["hi","how","are","you","how","about","you"]
+
+for(int i=0;i<words.length;i++){
+                  int count=0;
+                    Object value = map.get(words[i]);
+                if(value!=null)
+                  count = (Integer)value;
+                 count++;
+                  map.put(words[i],count);
+}
+
+
+
+
+
+{(hi,1),(how,2),(are,1),(you,2)}
+
+Templates
+
+Generics
+-----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

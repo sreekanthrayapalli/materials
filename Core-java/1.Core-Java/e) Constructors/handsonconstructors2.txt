@@ -1,0 +1,11 @@
+B.L
+-->create a class Student with variables called stdno,stdname,m1,m2,m3
+-->create a method called displayStdDetails() which used to display stdno and stdname
+-->create a method called displayStdPermance() which is used to 
+display m1,m2,m3 and calculate avg, display avg also
+-->create a static method called displaySchoolAddress() which is used to display address of school
+
+E.L (test case)
+------------------
+a)create 3 students object and give different values for stdno,stdname,m1,m2,m3 and call all methods
+

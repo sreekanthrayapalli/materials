@@ -1,0 +1,43 @@
+Pragrammer needs to know how to use Constructor
+-------------------------------------------------------------
+
+1. develop class Emp inside package called com.cts.vms with instance variable
+empno--->int
+ename--->String
+sal--->int
+type--->String 
+
+
+2. develop default constructor in side Emp class which is used to intialize values to the variables like this
+empno--->10
+ename--->"abc"
+sal---->50000
+type----->permanent
+ 
+so whenever you are creating object by using defalut constructor those values will be intialized.
+
+
+3. from above constructor we cannot use everytime. so now we are going to create parameterized constructor to intialize all instance variables
+so create parameterized constructor, it should have all instance variable. 
+
+use this keyword to intialize all values
+
+
+4. create display method inside Emp class which is used to print message on the console like this
+"emp name is "+ename+" sal is "+sal
+
+
+5. create ExEmp class(Execution class) in the same package with main method
+
+testcase 1:
+----------
+create two objects of Emp with default constructor and call display method 
+
+note: here we are getting same values for two Emp objects
+
+testcase 2:
+-----------
+create two objects of Emp with parameterized constructor(pass differnet values) and call display method
+
+
+note: here we are getting different values for two Emp objects

@@ -1,0 +1,107 @@
+dd-mm-yyyy
+
+yyyy-mm-dd
+yy-mm-dd hh:mi:ss
+a)client watns to print date in different format
+b)date input-->dd-mm-yyyy-->yy-mm-dd
+
+Date-->always gives current date+time with its own format
+SimpleDateFormat-->gives date and time with mentioned format
+Calendar-->it will manuplate the date
+
+
+MultiThreading
+--------------
+m1(){//10ms
+
+}
+m2(){//5ms
+
+}
+
+main(){
+m1();
+m2();
+
+}
+
+Manager(Main thread)--->5 employees
+
+java.lang.Thread(class)  java.lang.Runnable(interface)
+
+C1
+class C1 extends Thread,Exception{//Not possible
+
+}
+
+class C1 extends Exception implements Runnable{
+
+}
+java.lang.Thread api
+---------------------
+a)variables
+i)public static int MAX_PRIORITY=10;
+ii)public static int NORM_PRIORITY=5;
+iii)public static int MIN_PRIORITY=0;
+
+b)methods
+---------
+i)public void setName(String s);
+ii)public String getName():get Name of thread
+
+iii)public void setPriority(int)
+iv)public int getPriority()
+v)public void start();//this method makes thread to start execution
+vi)public void run();//null method,we need to override this method
+so that the logic which we writteen in run method that logic will be executed
+
+static methods
+--------------
+a)public static Thread currentThread()
+b)public static void sleep(long ms)
+Runnable interface
+-----------------
+C1 extends Exception,Thread//error
+
+
+
+create C1 with extends ArrayList,Thread (now you runnable)
+
+class C1 extends ArrayList implements Runnable
+
+
+create C3 with Thread
+
+class C3 extends Thread
+Synchronization
+---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

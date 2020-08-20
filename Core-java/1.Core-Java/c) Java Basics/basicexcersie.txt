@@ -1,0 +1,32 @@
+Hands-on
+--------
+1)Business Logic class
+
+a)create a Java Project with named "Hands-on For Java"
+
+b)create a package named "com.bigacademe.handsforjava.basics"
+every time when we create a package we need to follow naming specification
+<com/org>.<companyname>.<projectname>.<module>
+com-->for company
+org-->for organization
+
+c)create a Employee class with following variables & methods
+    Varaibles
+    i)create empno type int
+    ii)create ename type String
+    iii)create sal type int
+     
+    Methods
+    i)create dispalyInfo() method which displays empno,ename,sal
+    ii)create static method named displayOfficeAddress() which displays office address
+
+
+2)Execution logic class
+a)create another class named "EmployeeEx"
+b)create main method
+c)create two objects of Employee class and assign values for two employees as following like this
+    i)empno 100, ename "Raju"  sal 50000
+    ii)empno 200 ename "Ravi" sal 70000
+
+d)call displayInfo method w.r.t objects
+e)call displayOfficeAddress() method w.r.t classname

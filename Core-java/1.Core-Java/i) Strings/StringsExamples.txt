@@ -1,0 +1,51 @@
+1.Find the sum of the numbers in the given input string array
+  Input{?2AA?,?12?,?ABC?,?c1a?)
+  Output:6 (2+1+2+1)
+  Note in the above array 12 must not considered as such
+  i.e,it must be considered as 1,2
+
+
+2. Exchange the first and last character of string 
+input1- helloworld
+output=delloworlh
+
+
+3. given String[]={"Tn_chennai","karnataka_Bangalore"}
+input2=karnataka
+output String=Bangalore
+
+
+4. Email Validation
+
+String input1="test@gmail.com"
+                1)@ & . should be present;
+                2)@  should not be repeated;
+                3)there should be four charcters between @ and .;
+                4)there shouls be atleast 3 characters before @ ;
+                5)the end of mail id shoulsd be .com;
+
+
+5. count the number of words in the string
+                Input string="i work in cognizant.";
+                output=4;
+6. replace hi with bye in  a given String 
+    and insert "OK" in middle of the string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+1.A integer Collection is given as input. find the difference between each element. Return the index of the largest element which has the largest difference gap.
+input: {2,3,4,2,3}
+logic: 2-3=1,3-4=1,4-2=2,2-3=1
+2 is the max diff between 4 and 2,return the index of 4(2)
+output:2
+
+2.Given two integer List. merge the common elements into a new List. find the sum of the elements
+input1:{1,2,3,4,100,200,600}
+input2:{3,4,5,6}
+logic:{3,4}
+output:7
+
+
+3.Given two arrayslist. retrieve the odd position elements form first input and even position elemetns from second list. put it into the new arraylist at the same positions from where they are retrieved from.(consider 0th position as even position, and two lists are of same size)
+input1:{12,1,32,3}//odd position elements from this list
+input2:{0,12,2,23}//even position elements from this list
+output:{0,1,2,3}//new List
+
+
+ 4.Get a integer array as input. Find the average of the elements which are in the position of prime index
+input:{1,2,3,4,5,6,7,8,9,10}
+logic:3+4+6+8(the numbers which are there in prime index)
+output:21/4
+
+5.Get two integer arrays as input. Find if there are common elements in the arrays. find the number of common elements.
+input1: {1,2,3,4}
+input2: {3,4,5,6}
+output: 4(3,4,3,4)
+
+
+6. create Employee class, add employee to TreeSet, and sort employee objects based on employee names in ascending &  descending order  (use Comparable and Comparator internally)
+
+7.create comparator implemented class in such way that treeset should not allow same interger values irrespective of plus or minus
+ex: (1,-1,10,-10,-11,45,56)---->(1,10,-11,45,56)
+

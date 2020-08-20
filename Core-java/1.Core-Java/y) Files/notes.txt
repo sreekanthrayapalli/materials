@@ -1,0 +1,49 @@
+Files(java.io.*)
+-----------------
+storing output permently is called peristance
+
+file or database(mysql,oracle,sql-server)
+
+java <--->file====>Streaming (the flow of data is called stream)
+
+byteStream
+java.io.FileInputStream(it read data from file)
+read()
+java.io.FileOutputStream(it write data into file)
+write(bytes)
+
+character Stream
+java.io.FileWriter:(it write data into file)
+java.io.FileReader(it reads data from file)
+
+step1: open the file(create an object)
+step2: do operation write/read
+step3: close the file
+
+java.io.FileNotFoundException(step1), java.io.IOException
+
+
+file-->hi how are you hi i am good how about you
+
+String s= hi how are you hi i am good how about you
+
+string []arry = {"hi","how","are","you","hi","i","am","good","how","about","you"}
+
+map(hi,2)
+    (how,2)
+    (are,1)
+    (you,2)
+    (i,1) 
+   
+Searilazation(the process of saving entire object)
+--------------------------------------------------
+java.io.Serializable is a marker interface(which does not any method
+but internally jvm gives some specification to that interface)
+
+java.io.ObjectOutputStream
+java.io.ObjectInputStream
+
+
+
+
+

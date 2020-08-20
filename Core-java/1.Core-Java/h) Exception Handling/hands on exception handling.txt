@@ -1,0 +1,56 @@
+1. a.create user defined exception name is  LoginException
+   b.Create class ValidateUser which is having a method named      checkUser(String username,String password) which returns         boolean value.
+   c. if username is "admin" and password is "admin123" then           checkUser method returns true otherwise returns false.
+   d. if username or password is null then raise an exception       Named LoginException and it should give user-friendly       message username or password should not be null.
+
+
+
+2)a)create User-defined Exception named PasswordException
+    b)create class ValidPassword which having a method named validatePassword(String password)
+   c)if password length is greater than 6 characters and less then 10 characters and it should contain 1 numberic and 1 special symbol then print Valid password else throw ValidPassword Excpetion
+    d)create execution logic named(PasswordEx) test validatePassword method
+
+
+
+3. Develop a simple java application to calculate the tax for a particular employee based on his salary.
+
+Develop  a  class  named  “TaxCalculator“ with a method named calculateTax with the following method parameters,
+
+Variable Name	Data Type
+empName	String
+isIndian	                 boolean
+empSal	                 double
+
+This method should return a double taxAmount.
+
+The business logic for calculating the tax  is as follows, this has to be implemented inside the method,
+
+If the employee is not a Indian
+   The calculator should throw a CountryNotValidException
+
+If the employee name is null or empty
+   The calculator should throw a EmployeeNameInvalidException
+
+If  empSal is greater than one lakh and isIndian true
+taxAmount =empSal *8/100 
+Otherwise  If  empSal  is between 50K and 1lakh and isIndian true
+taxAmount =empSal *6/100 
+Otherwise  If  empSal  is between 30 and 50 Thousand  and isIndian true
+taxAmount =empSal *5/100 
+Otherwise  If  empSal  is between 10 and 30 Thousand  and isIndian true
+ taxAmount =empSal *4/100 
+Otherwise
+   The calculator should throw a TaxNotEligibleException. 
+
+Develop a main class CalculatorSimulator  , implement the following logic in main method
+
+i.	Execute the calculateTax Method and print the tax amount as “Tax amount is “<Tax Amount>
+
+ii.	In case the calculateTaxMethod throws exceptions, this method needs to catch the appropriate exception print the stack trace and display the following messages,
+
+a.	Country not valid:  “The employee should be an Indian citizen for calculating tax”
+
+b.	Employee name not valid:  “The employee name cannot be empty”
+
+c.	Not eligible for Tax calculation:  “The employee does not need to pay tax”
+

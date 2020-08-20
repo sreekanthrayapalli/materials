@@ -1,0 +1,221 @@
+Multi Thread
+-----------------
+class C1 extends Thread{
+
+void m1(){
+
+}
+
+void m2(){
+
+}
+}
+
+C1 obj = new C1();
+obj.m1();//100ms                     1000ms-->1s
+
+C1 obj2 = new C1();
+obj2.m1();//100ms
+Thread class or Runnable interface
+java.lang.Thread-->api
+-----------------------------
+
+
+
+Thread life cycle
+----------------------
+Thread t1 = new Thread();
+
+C1 obj = new C1();//new state
+obj.start();//ready-->running state
+
+5 threads --->2 processers
+a)cpu is keeping thread in waiting state and cpu will jump into another thread based on time slice . (round -robon algoritham)
+b)Programmer explictily keeping thread in waiting state
+c)thread(t1) is wating after completion of t1 execution for other thread(t2) to complete other thread execution
+Thread api
+--------------
+Variables
+-----------
+a)public static final int HIGH_PRIORITY(10)
+b)public static final int NORM_PRIORITY(5)
+c)public static final int LOW_PRIORITY(0)
+
+method
+---------
+a)public void setPriority(int)
+C1 obj = new C1();
+obj.setPriority(Thread.HIGH_PRIORITY);
+
+b)public int getPriority();
+int p = obj.getPriority();
+s.o.p(p);//10   //5
+
+c)public void setName(String name)
+C1 obj1 = new C1();//thread-0--->abc
+C1 obj2 = new C1();//thread-1
+C1 obj3 = new C1();//thread-2
+obj1.setName("abc");
+
+d)public String getName()
+String n = obj1.getName();//abc
+String s1 = obj2.getName();//thread-1
+
+e)public void start();//this thread makes to move thread to ready from new state
+f)public void run();//what type of statmeent to want exeucte those statements you need to write
+in run//
+
+we need to override run method so that when we call start() method internally run method will be executed
+-->we should not call run() method directly, if call run() method directly then it will not be treated as thread
+
+
+07/12/2016
+class C1{
+void m1(){
+
+}
+
+}
+
+C1 obj1 = new C1();
+C1 obj2 = new C1();
+
+obj1.m1();//100ms
+obj2.m1();//100ms--->//200ms
+
+100ms if i thread
+
+class C1 extends Thread{
+
+
+}
+api in thread class
+------------------------
+variables
+-----------
+public static final int MAX_PRIORITY=10
+public static final int NORM_PRIORITY=5;
+public static final int MIN_PRIORITY=0
+
+
+methods
+----------
+C1 obj = new C1();
+i)public void setPriority(int num)
+obj.setPriority(Thread.MAX_PRIORITY);
+
+ii)public int getPriority()
+int a = obj.getPriority();
+
+iii)public void setName(String)
+C1 obj1 = new C1();//thread-0
+C1 obj2 = new C1();//thread-1--->abc
+obj2.setName("abc");
+
+iv)public String getName()
+String s = obj1.getName();//thread-0
+String s1 = obj2.getName();//abc
+
+v)public void start();
+C1 obj = new C1();//new 
+obj.start();//thread is moving ready state if cpu is free, then it is running state
+
+vi)public void run()
+
+static methods
+------------------
+a)public static void sleep(long ms)
+b)public static Thread currentThread()
+
+
+Constructors
+-----------------
+new Thread()
+new Thread(int)
+new Thread(int,String)
+
+
+mainThread/fore ground thread--->it is executing your logic 
+
+background thread/ garbage collector--->it is clearing your memory
+
+-->how to multiple threads
+
+-->what is main thread and backgroud thread
+
+-->how can you make main thread to wait untill child threads completes their work(join methods)
+
+
+
+
+
+
+
+
+
+java.lang.Runnable interface is having only one method
+1)public void run()
+class C1 implements Runnable{
+
+public void run(){
+
+}
+
+}
+
+C1 obj = new C1();
+
+obj.start();//error
+
+Thread t1 = new Thread(obj);      new Thread(Runnable)
+t1.start();
+
+
+class C1 extends C2 implements Runnable{
+
+
+}//correct
+
+class C1 extends C2,Thread{
+
+}//error
+synchronization
+--------------------
+
+1000
+
+200,300,100
+
+100+200
+100+300
+100+100
+
+1200/1300/1100--->not 1600
+
+
+100+200=1200
+1200+300=1500
+Dead Lock
+--------------
+
+T1               T2             T3
+ |                    |                |
+T3                T1             T2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

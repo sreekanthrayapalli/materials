@@ -1,0 +1,16 @@
+a)setter and getter
+
+b)util package
+
+c)we can write other html 
+
+d)ng build --prod
+
+e)ng serve --prod
+
+f)replacing files with const
+
+create other files like envronment.prod.ts
+h)use ng build --configuration=stage
+   use ng serve --configuration=stage
+

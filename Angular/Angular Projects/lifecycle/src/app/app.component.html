@@ -1,0 +1,7 @@
+Value from parent {{a}} -->  {{num}}
+
+<button (click)="increment()">Inc</button>
+
+<button (click)="updateName()">UpdateName</button>
+
+<app-child [a]="a" [u]="user" *ngIf="!isRemove()"></app-child>

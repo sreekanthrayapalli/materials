@@ -2,7 +2,9 @@ a)setter and getter
 
 b)util package
 
-c)we can write other html 
+c)we can write html in other places.
+
+d)testing  (ng test)
 
 d)ng build --prod
 

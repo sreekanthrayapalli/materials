@@ -1,0 +1,31 @@
+a)Add Dependency in pom.xml
+<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.10.3</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>5.2.16.Final</version>
+		</dependency>
+		
+		
+
+
+b) Add following properties in hibernate.cfg.xml
+
+<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+		
+	
+	
+
+c)add Following annotations in POJO clas	s
+
+
+@Cacheable  
+@Cache(usage=CacheConcurrencyStrategy.READ_ONLY) 
+

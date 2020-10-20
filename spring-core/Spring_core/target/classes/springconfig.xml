@@ -1,0 +1,16 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean class="com.myc.core.xmlconfig.Sample" id="s1">
+    <property name="a" value="10"></property>
+    <property name="msg" value="Hello"></property>
+   </bean>
+   
+   <bean class="com.myc.core.xmlconfig.A" id="a1">
+   	<property name="a" value="10"></property>
+   	<property name="b" value="20"></property>
+   </bean>
+   
+</beans>   
